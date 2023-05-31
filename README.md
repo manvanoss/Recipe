@@ -1,2 +1,2 @@
 # Recipe
-Its a recipe website for chicken.
+Its a recipe website.
