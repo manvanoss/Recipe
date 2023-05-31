@@ -1,0 +1,115 @@
+html   {
+    height: 100%;
+    margin: 0;
+}
+
+body   {
+    margin: 0;
+    height: 100%;
+    overflow-anchor: none;
+    background-image: url(imgs/background_2.png);
+    background-size: cover; 
+}
+
+.imageLink {
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    position: absolute;
+    object-fit: cover;
+    z-index: 100em;
+    top: -5em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border: 0.6em double white;
+    background: linear-gradient(to bottom, white, black);
+    background-size: cover;
+    background-origin: border-box;
+    box-shadow: 0 0 0px black;
+    animation: expand 1s forwards, Down 0.75s 0.5s forwards, Up 1s 0.9s forwards;
+    /* transform: scale(0.01);
+    transition: 0.3s; */
+}
+
+.image:hover {
+    height: 11.5em;
+    width: 11.5em;
+}
+
+.container  {
+    position: relative;
+    margin-top: 0.5em;
+    top: 10em;
+    width: 40em;
+    height: 82em;
+    align-items: center;
+    border: 0.5em double rgb(222, 185, 2);
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background-image: url(imgs/Woodbg.jpg);
+}
+
+header h1 {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Sansita', sans-serif;
+    font-size: 45px;
+}
+
+.description {
+    width: 20em;
+    height: 5em;
+    margin: auto;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px ;
+}
+
+.recipe_container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: auto;
+    width: 30em;
+    height: 9em;
+    border: 0.5em double rgb(222, 185, 2);
+    display: flex;
+    justify-content: center;
+    background-color: #DFCFBE;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.recipe_content{
+    padding-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,145px);  /* 3 columns */
+    grid-template-rows: repeat(3,80px); 
+}
+
+.label_detail{
+    font-weight: bold;
+}
+
+.ingredient_container{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 40em;
+    height: 9em;
+}
+
+.ingredient_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Sansita', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+
