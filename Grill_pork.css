@@ -1,0 +1,163 @@
+html   {
+    height: 100%;
+    margin: 0;
+}
+
+body   {
+    margin: 0;
+    height: 100%;
+    overflow-anchor: none;
+    background-image: url(imgs/background_2.png);
+    background-size: cover; 
+}
+
+.imageLink {
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    position: absolute;
+    object-fit: cover;
+    z-index: 100em;
+    top: -5em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border: 0.6em double white;
+    background: linear-gradient(to bottom, white, black);
+    background-size: cover;
+    background-origin: border-box;
+    box-shadow: 0 0 0px black;
+    animation: expand 1s forwards, Down 0.75s 0.5s forwards, Up 1s 0.9s forwards;
+    /* transform: scale(0.01);
+    transition: 0.3s; */
+}
+
+.image:hover {
+    height: 11.5em;
+    width: 11.5em;
+}
+
+.container  {
+    position: relative;
+    margin-top: 0.5em;
+    top: 10em;
+    width: 50em;
+    height: 140em;
+    align-items: center;
+    border: 0.5em double rgb(222, 149, 2);
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background-color: rgba(126, 86, 5, 0.769);
+}
+
+header, .description, .recipe_details, .recipe_container, .ingredient_container, .instruction_container, .nutrition{
+    color: #DFCFBE;
+}
+
+header h1 {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Sansita', sans-serif;
+    font-size: 45px;
+}
+
+.description {
+    width: 20em;
+    height: 5em;
+    margin: auto;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px ;
+}
+
+.recipe_container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: auto;
+    width: 30em;
+    height: 9em;
+    background-color: rgb(123, 88, 18);
+    border: 0.5em double rgb(222, 185, 2);
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 1em;
+}
+
+.recipe_content{
+    padding-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,155px);  /* 3 columns */
+    grid-template-rows: repeat(3,80px); 
+}
+
+.label_detail{
+    font-weight: bold;
+}
+
+.ingredient_container, .nutrition_facts{
+    padding-top: 1em;
+    padding-bottom: 5em;
+    height: 36em;
+}
+
+.ingredient_title, .instruction_title, .nutrition_title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Sansita', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.ingredient_list{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
+.instruction_steps{
+
+    width: 38em;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+
+}
+.instruction_steps li{
+    padding-top: 1em;
+}
+
+.nutrition_container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: auto;
+    width: 30em;
+    height: 9em;
+    background-color: rgb(123, 88, 18);
+    border: 0.5em double rgb(222, 185, 2);
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 1em;
+}
+.nutrition_content{
+    padding-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,155px);  /* 3 columns */
+    grid-template-rows: repeat(3,80px); 
+}
+
+
+
+
+
+
+

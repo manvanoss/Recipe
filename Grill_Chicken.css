@@ -43,14 +43,18 @@ body   {
     position: relative;
     margin-top: 0.5em;
     top: 10em;
-    width: 40em;
-    height: 82em;
+    width: 50em;
+    height: 105em;
     align-items: center;
-    border: 0.5em double rgb(222, 185, 2);
+    border: 0.5em double rgb(222, 149, 2);
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 1em;
-    background-image: url(imgs/Woodbg.jpg);
+    background-color: rgba(126, 86, 5, 0.769);
+}
+
+header, .description, .recipe_details, .recipe_container, .ingredient_container, .instruction_container, .nutrition{
+    color: #DFCFBE;
 }
 
 header h1 {
@@ -67,7 +71,7 @@ header h1 {
     margin: auto;
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px ;
+    font-size: 25px ;
 }
 
 .recipe_container{
@@ -76,18 +80,20 @@ header h1 {
     margin: auto;
     width: 30em;
     height: 9em;
+    background-color: rgb(123, 88, 18);
     border: 0.5em double rgb(222, 185, 2);
     display: flex;
     justify-content: center;
-    background-color: #DFCFBE;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 1em;
 }
 
 .recipe_content{
     padding-top: 20px;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3,145px);  /* 3 columns */
+    grid-template-columns: repeat(3,155px);  /* 3 columns */
     grid-template-rows: repeat(3,80px); 
 }
 
@@ -95,20 +101,62 @@ header h1 {
     font-weight: bold;
 }
 
-.ingredient_container{
+.ingredient_container, .nutrition_facts{
     padding-top: 1em;
-    padding-bottom: 2em;
-    width: 40em;
+    padding-bottom: 5em;
     height: 9em;
 }
 
-.ingredient_title{
+.ingredient_title, .instruction_title, .nutrition_title{
     display: flex;
     justify-content: center;
     font-family: 'Sansita', sans-serif;
     font-size: 35px;
     text-align: center;
 }
+
+.ingredient_list{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
+.instruction_steps{
+
+    width: 38em;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+
+}
+.instruction_steps li{
+    padding-top: 1em;
+}
+
+.nutrition_container{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: auto;
+    width: 30em;
+    height: 9em;
+    background-color: rgb(123, 88, 18);
+    border: 0.5em double rgb(222, 185, 2);
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-radius: 1em;
+}
+.nutrition_content{
+    padding-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,155px);  /* 3 columns */
+    grid-template-rows: repeat(3,80px); 
+}
+
+
+
 
 
 
